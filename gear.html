@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gear - Hoop Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff8c00;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .product {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo-title">
+      <a href="index.html">
+        <img src="basketball-logo.png" alt="Hoop Haven Logo" style="width:10%; height:auto;">
+      </a>
+      <h1 style="display: inline-block; margin-left: 20px; vertical-align: top;">Hoop Haven Shop</h1>
+    </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nba-central.html">NBA Central</a></li>
+                <li><a href="streetball-chronicles.html">Streetball Chronicles</a></li>
+                <li><a href="fan-court.html">Fan Court</a></li>
+                <li><a href="multimedia-zone.html">Multimedia Zone</a></li>
+                <li><a href="gear.html" class="active">Gear</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-basketball">
+            <h2>Basketball</h2>
+            <div class="product">
+                <img src="basketball.jpg" alt="Basketball">
+                <h3>Official NBA Basketball - $19.99</h3>
+                <p>Get your hands on the official basketball used in NBA games.</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="product-hoop">
+            <h2>Basketball Hoop</h2>
+            <div class="product">
+                <img src="basketball-hoop.jpg" alt="Basketball Hoop">
+                <h3>Outdoor Basketball Hoop - $199.99</h3>
+                <p>Complete your backyard setup with this durable outdoor basketball hoop.</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="product-gear">
+            <h2>Basketball Gear</h2>
+            <div class="product">
+                <img src="gear.jpg" alt="Basketball Gear">
+                <h3>Compression Shorts & Shirt - $26.99</h3>
+                <p>Stay comfortable on the court with this package deal including compression shorts and a shirt.</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="product-poster">
+            <h2>Poster</h2>
+            <div class="product">
+                <img src="lebron-poster.jpg" alt="LeBron James Poster">
+                <h3>LeBron James Poster - $29.99</h3>
+                <p>Add some inspiration to your room with this LeBron James poster.</p>
+                <button>Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-bottom: 20px;">
+    <p>&copy; 2024 Hoop Haven. All rights reserved. Dive deep into the basketball universe with us.</p>
+    <nav>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a> | 
+        <a href="mailto:Brian@Exum.com">Brian@Exum.com</a>
+    </nav>
+</footer>
+
+
+

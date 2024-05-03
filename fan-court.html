@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Court - Hoop Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional Styles */
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        section {
+            flex-basis: 45%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff8c00;
+            margin-top: 0;
+        }
+
+        .discussion {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .player-highlight, .fan-art-item, .community-highlight {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .player-highlight img, .fan-art-item img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .community-highlight p {
+            margin-bottom: 0;
+        }
+    button {
+    padding: 10px 15px;
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo-title">
+      <a href="index.html">
+        <img src="basketball-logo.png" alt="Hoop Haven Logo" style="width:10%; height:auto;">
+      </a>
+      <h1 style="display: inline-block; margin-left: 20px; vertical-align: top;">Fan Court</h1>
+    </div>
+
+        <nav>
+            <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="nba-central.html">NBA Central</a></li>
+        <li><a href="streetball-chronicles.html">Streetball Chronicles</a></li>
+         <li><a href="fan-court.html">Fan Court</a></li>
+     <li><a href="multimedia-zone.html" class="active">Multimedia Zone</a></li>
+          <li><a href="gear.html">Gear</a></li>
+         <li><a href="about.html">About</a></li>
+           </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="fan-submission">
+            <h2>Share Your Basketball Stories</h2>
+            <p>Got a cool story or a hot take? Share your memorable moments, favorite games, or basketball insights with us! Your story might get featured on our site for other fans to enjoy.</p>
+            <form id="story-form" action="mailto:example@hoophaven.com" method="post" enctype="text/plain">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="story">Your Story:</label>
+                <textarea id="story" name="story" required></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+
+        <section id="polls">
+            <h2>Weekly Poll</h2>
+            <p>Who do you think will win the MVP title this season? Cast your vote and let us know your prediction!</p>
+            <form id="poll-form" action="#" method="get">
+                <input type="radio" id="player1" name="mvp" value="LeBron James">
+                <label for="player1">LeBron James</label><br>
+                <input type="radio" id="player2" name="mvp" value="Kevin Durant">
+                <label for="player2">Kevin Durant</label><br>
+                <input type="radio" id="player3" name="mvp" value="Stephen Curry">
+                <label for="player3">Stephen Curry</label><br>
+                <input type="submit" value="Vote">
+            </form>
+        </section>
+
+        <section id="discussions">
+            <h2>Recent Discussions</h2>
+            <article class="discussion">
+                <h3>Best NBA Team of All Time</h3>
+                <p>Join the conversation about which NBA team holds the title of the best of all time. Share your opinions and insights!</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+            <article class="discussion">
+                <h3>Trade Rumors</h3>
+                <p>Get in on the latest trade rumors buzzing around the NBA. Discuss potential trades and their impact on the league!</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+            <article class="discussion">
+                <h3>Rookie of the Year Predictions</h3>
+                <p>Who are your top picks for this year's Rookie of the Year? Discuss the new talents making their mark in the league.</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+            <article class="discussion">
+                <h3>Defensive Player Awards</h3>
+                <p>Debate who should win this year's Defensive Player of the Year. Discuss the top defenders and their impact on their teams.</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+            <article class="discussion">
+                <h3>Impact of International Players in the NBA</h3>
+                <p>Discuss how international players have changed the dynamics of the NBA and their growing influence in the league.</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+            <article class="discussion">
+                <h3>NBA Expansion Teams</h3>
+                <p>What cities should be next for NBA expansion? Explore possibilities and share your thoughts on potential new teams.</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+            <article class="discussion">
+                <h3>Evolution of the Point Guard Role</h3>
+                <p>How has the role of the point guard evolved over the past decade? Discuss changes and standout players who have redefined this position.</p>
+                <button onclick="location.href='#';">Comment</button>
+            </article>
+        </section>
+
+        <section id="player-highlights">
+            <h2>Player Highlights</h2>
+            <div class="player-highlight">
+                <h3>LeBron James</h3>
+                <p>Explore the latest game highlights, career milestones, and news updates about LeBron James, one of the greatest basketball players of all time.</p>
+                <img src="lebron-james.jpg" alt="LeBron James" style="width:60%;height:auto;">
+            </div>
+            <div class="player-highlight">
+                <h3>Kawhi Leonard</h3>
+                <p>Stay updated with the recent performances, stats, and achievements of Kawhi Leonard, known for his impressive defense and clutch plays.</p>
+                <img src="kawhi-leonard.jpg" alt="Kawhi Leonard" style="width:60%;height:auto;">
+            </div>
+            <div class="player-highlight">
+                <h3>Luka Dončić</h3>
+                <p>Check out the incredible plays, records, and interviews featuring Luka Dončić, one of the most promising young talents in the NBA.</p>
+                <img src="luka-doncic.jpg" alt="Luka Dončić" style="width:60%;height:auto;">
+            </div>
+        </section>
+
+        <section id="fan-art">
+            <h2>Fan Art Gallery</h2>
+            <div class="fan-art-item">
+                <img src="fan-art1.jpg" alt="Fan Art 1" style="width:40%;height:auto;">
+                <p>Enjoy amazing artwork created by fans, depicting their favorite basketball players, iconic moments, and team logos.</p>
+            </div>
+            <div class="fan-art-item">
+                <img src="fan-art2.jpg" alt="Fan Art 2" style="width:60%;height:auto;">
+                <p>Discover creative illustrations capturing the essence of streetball culture, showcasing the passion and energy of the game.</p>
+            </div>
+            <div class="fan-art-item">
+                <img src="fan-art3.jpg" alt="Fan Art 3" style="width:60%;height:auto;">
+                <p>Explore colorful graffiti-style paintings celebrating the love for basketball and the vibrant community of fans around the world.</p>
+            </div>
+        </section>
+
+        <section id="community-highlights">
+    <h2>Community Highlights</h2>
+    <div class="community-highlight">
+        <h3>Local Leagues</h3>
+        <img src="local-leagues.jpg" alt="Local Basketball Leagues" style="width:45%;height:auto;">
+        <p>Engage with basketball at a community level! Join local leagues to compete, improve your skills, and enjoy the spirit of friendly competition.</p>
+    </div>
+    <div class="community-highlight">
+        <h3>Veteran Showcases</h3>
+        <img src="veteran-showcases.jpg" alt="Veteran Basketball Players" style="width:60%;height:auto;">
+        <p>Celebrate the careers of veteran basketball players who have influenced the game locally. Attend showcases where these seasoned players demonstrate their skills and share experiences.</p>
+    </div>
+    <div class="community-highlight">
+        <h3>Charity Events</h3>
+        <img src="charity-events.jpg" alt="Basketball Charity Events" style="width:60%;height:auto;">
+        <p>Support basketball-related charity events that help raise funds and awareness for various causes. Get involved and contribute to the welfare of the wider community.</p>
+    </div>
+    </section>
+    </main>
+
+    <footer style="margin-bottom: 20px;">
+    <p>&copy; 2024 Hoop Haven. All rights reserved. Dive deep into the basketball universe with us.</p>
+    <nav>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a> | 
+        <a href="mailto:Brian@Exum.com">Brian@Exum.com</a>
+    </nav>
+</footer>
+    <script>
+        // Handle form submissions
+        document.getElementById("story-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for submitting your story! We'll review it for feature consideration.");
+            // Clear form fields if needed
+            this.reset();
+        });
+
+        document.getElementById("poll-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for voting!");
+            // Clear form fields if needed
+            // Reset radio button selection
+            this.reset();
+        });
+    </script>
+</body>
+</html>

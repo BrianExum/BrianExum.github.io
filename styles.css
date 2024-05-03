@@ -1,0 +1,215 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+header {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo img {
+    height: 80px;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background-color: #e67e22;
+    border-radius: 3px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+/* Featured Content */
+#featured-content {
+    position: relative;
+}
+
+#featured-content .slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#featured-content .slide-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* News Ticker */
+#latest-updates marquee {
+    background: #ffdd00;
+    color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Content Highlights - Using placeholders */
+.highlight-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.highlight-container article {
+    width: calc(33.333% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-placeholder {
+    width: 150px;
+    height: 100px;
+    background-color: #cccccc;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Engagement Section */
+#engagement {
+    text-align: center;
+}
+
+.button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #ffdd00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+    .highlight-container article {
+        width: 100%;
+    }
+
+    .image-placeholder {
+        width: 100px; /* Adjusted width for smaller screens */
+        height: 66px; /* Adjusted height for smaller screens */
+    }
+
+    #featured-content .slide img {
+        object-position: 50% 0; /* Keeps the image's position on smaller screens */
+    }
+}
+
+/* NBA Central Specific Styles */
+#nba-central .side-by-side {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#nba-central .side-by-side > section {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#nba-central #latest-scores, 
+#nba-central #upcoming-games,
+#nba-central #player-spotlight, 
+#nba-central #video-highlights {
+    border-left: 5px solid #ff8c00; /* Orange accent on the side */
+}
+
+#nba-central .player-profile img, 
+#nba-central .video-container img {
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+#nba-central .fan-polls ul {
+    padding-left: 0;
+}
+
+#nba-central .fan-polls li {
+    background-color: #d4d4d4;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    list-style-type: none;
+}
+
+#nba-central .fan-polls form input[type="submit"] {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#nba-central .fan-polls form input[type="submit"]:hover {
+    background-color: #e67e22;
+}

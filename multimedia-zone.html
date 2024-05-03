@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Zone - Hoop Haven</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #ff8c00;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .video-thumbnail {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .video-thumbnail:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .video-thumbnail img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #ff8c00;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #e67e22;
+        }
+        #search-input {
+            width: 70%;
+            padding: 8px;
+            border-radius: 5px 0 0 5px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        #search-input:focus {
+            border-color: #ff8c00;
+        }
+        #search-button {
+            padding: 8px 20px;
+            border-radius: 0 5px 5px 0;
+            border: none;
+            background-color: #ff8c00;
+            color: white;
+            cursor: pointer;
+        }
+        #search-button:hover {
+            background-color: #e67e22;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo-title">
+      <a href="index.html">
+        <img src="basketball-logo.png" alt="Hoop Haven Logo" style="width:10%; height:auto;">
+      </a>
+      <h1 style="display: inline-block; margin-left: 20px; vertical-align: top;">Multimedia Zone</h1>
+    </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="nba-central.html">NBA Central</a></li>
+                <li><a href="streetball-chronicles.html">Streetball Chronicles</a></li>
+                <li><a href="fan-court.html">Fan Court</a></li>
+                <li><a href="multimedia-zone.html" class="active">Multimedia Zone</a></li>
+                <li><a href="gear.html">Gear</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured-videos">
+            <h2>Featured Videos</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/zs0e9_SMXIw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+<div class="video-container">
+                <iframe src="https://www.youtube.com/embed/sSgUtRBnoCQ?si=NkM_S0JAm2wpgbTu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+<div class="video-container">
+                <iframe src="https://www.youtube.com/embed/sFvj6a_GlPY?si=ILVPiXCnLfa69Umw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+<div class="video-container">
+                <iframe src="https://www.youtube.com/embed/UQWUHh3rJFo?si=vPiDy4RrME0WeBCb" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="video-gallery">
+            <h2>Video Gallery</h2>
+            <div class="video-thumbnail" onclick="playVideo('R-AOZ2uPBx4');">
+                <img src="video1.jpg" alt="Anthony Edwards Dunk">
+                <h3>Anthony Edwards' Crazy Posterizing Dunk</h3>
+                <p>Watch Anthony Edwards as he delivers a stunning dunk over a defender in a breathtaking display of athleticism and power.</p>
+            </div>
+            <div class="video-thumbnail" onclick="playVideo('S-S08e1gYKM');">
+                <img src="video2.jpg" alt="LeBron James Game Winner">
+                <h3>LeBron James Hits Deep Three Over Curry</h3>
+                <p>LeBron James secures the win with a deep three-pointer over Steph Curry in the final seconds of the game.</p>
+            </div>
+        </section>
+
+        <section id="categories">
+    <h2>Categories</h2>
+    <ul>
+        <li>
+            <a href="#">Game Highlights</a>
+            <p>Watch exciting highlights from the latest basketball games.</p>
+        </li>
+        <li>
+            <a href="#">Player Interviews</a>
+            <p>Hear from your favorite basketball players as they share their insights and experiences.</p>
+        </li>
+        <li>
+            <a href="#">Skill Tutorials</a>
+            <p>Learn new basketball skills and techniques from professional trainers and players.</p>
+        </li>
+        <li>
+            <a href="#">Behind the Scenes</a>
+            <p>Get an exclusive look behind the scenes of your favorite basketball teams and events.</p>
+        </li>
+        <li>
+            <a href="#">Fan-made Content</a>
+            <p>Explore creative content made by passionate basketball fans from around the world.</p>
+        </li>
+    </ul>
+</section>
+
+        <section id="search">
+            <h2>Search Videos</h2>
+            <form action="#" method="get">
+                <input type="text" id="search-input" name="search" placeholder="Search...">
+                <button type="submit" id="search-button">Search</button>
+            </form>
+        </section>
+    </main>
+
+    <footer style="margin-bottom: 20px;">
+    <p>&copy; 2024 Hoop Haven. All rights reserved. Dive deep into the basketball universe with us.</p>
+    <nav>
+        <a href="#">Privacy Policy</a> | 
+        <a href="#">Terms of Service</a> | 
+        <a href="mailto:Brian@Exum.com">Brian@Exum.com</a>
+    </nav>
+</footer>
+
+    <script>
+        function playVideo(videoID) {
+            var iframe = document.getElementById('mainVideo');
+            iframe.src = "https://www.youtube.com/embed/" + videoID + "?autoplay=1&modestbranding=1";
+        }
+    </script>
+</body>
+</html>
+
+
+
